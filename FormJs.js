@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             message.style.color = 'red';
             return;
         }
+        /*
+        <--any thing for github -->
+        
+        */
         
         if (isDuplicate(fullName, email, phone)) {
             message.textContent = 'Duplicate entry detected.';
