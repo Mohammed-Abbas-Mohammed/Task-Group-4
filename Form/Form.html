@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENQUIRE NOW</title>
+    <link rel="stylesheet" href="FormStyles.css">
+</head>
+<body>
+    <h1 id="start"> ENQUIRE NOW </h1>
+    <p id="text_top">Fill out the below form and one of our<br>
+        representative will connect with you soon</p>
+    <form id="cutomerData">
+        <div>
+            <label for="fName" class="labels">Full Name</label>
+            <input type="text" placeholder="Enter Full Name" id="fName" name="fName" class="inputs" required>
+        </div>
+        <div>
+            <label for="Email" class="labels">Your E-mail</label>
+            <input type="email" placeholder="Enter Your E-mail" id="Email" name="Email" class="inputs" required>
+        </div>
+        <div>
+            <label for="phone" class="labels">Phone Number</label>
+            <input type="text" placeholder="Enter Phone Number" id="phone" name="phone" class="inputs" required>
+            <div id="errorPhone"></div>
+        </div>
+        <input type="checkbox" id="updated" name="updated" required>
+        <label >Keep me updated on news and offers</label>
+        <p id="text_bott">
+            Please visit <a id="privacy" href="#start">privacy policy</a> to understand how Emaar handles your personal data.
+        </p>
+        <button type="submit">SUBMIT</button>
+        <div id="errorMessages"></div>
+    </form>
+    <script src="./FormJs.js"></script>
+</body>
+</html>
